@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    font-size: 16px;
+    background: #fffffe;
+}
+:root{
+    --thumbColor: #C1C1C1;
+    --trackColor: #ffffff;
+}
+body::-webkit-scrollbar-thumb {
+    background-repeat: no-repeat;
+    background-color: var(--thumbColor);
+}
+
+body::-webkit-scrollbar-track {
+    background-repeat: no-repeat;
+    background-color: var(--trackColor);
+}
+.navbar{
+    width: 100%;
+    height: 5.5rem;
+    padding: 0.5rem 3rem;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    left: 0;
+}
+.navbar h2{
+    text-transform: uppercase;
+    color: #272343;
+}
+.navbar .enlaces a{
+    text-decoration: none;
+    color: #2d334a;
+    font-weight: 600;
+    margin: 0 1rem;
+}
+.main{
+    width: 85%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    align-items: center;
+    height: 85.75vh;
+}
+.main .left-side{
+    width: 50%;
+    height: 100%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+.main .left-side h2{
+    font-size: 3rem;
+    line-height: 1.15;
+    text-transform: capitalize;
+    color: #272343;
+    letter-spacing: 0.025em;
+}
+.main .left-side p{
+    color: #2d334a;
+    font-size: 1rem;
+    letter-spacing: 0.05em;
+    margin: 2rem 0;
+}
+.main .left-side a{
+    padding: 10px 25px;
+    background: #ffd803;
+    color: #272343;
+    text-decoration: none;
+    outline: none;
+    font-weight: 600;
+    border-radius: 2px;
+}
+.main .right-side{
+    width: 50%;
+    height: 100%;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main .right-side img{
+    cursor: pointer;
+}
+.example{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+.example .left-side-2{
+    width: 60%;
+    padding: 0 2.5rem;
+}
+.example .left-side-2 h2{
+    color: #272343;
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+.example .left-side-2 p{
+    color: #2d334a;
+    margin: 0.5rem 0 2rem 0;
+    font-size: 1rem;
+    letter-spacing: 0.05em;
+}
+.example .left-side-2 #codigoEjemplo{
+    display: block;
+    margin: 1rem 0;
+    padding: 10px 15px;
+    background: #fff;
+    color: #333;
+}
+.example .right-side-2{
+    width: 40%;
+    padding: 0 1rem;
+}
+.example .right-side-2 h2{
+    font-size: 1.5rem;
+    line-height: 1;
+    margin-bottom: 1rem;
+}
+.example .right-side-2 label{
+    color: #696969;
+    font-size: 0.9rem;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.example .right-side-2 p{
+    color: #2d334a;
+    margin: 2rem 0 0.5rem 0;
+    font-size: 1rem;
+    letter-spacing: 0.05em;
+}
+.example .right-side-2 input[type="text"]{
+    width: 100%;
+    outline: none;
+    padding: 10px 5px;
+    border: none;
+    margin: 0.5rem 0 0.5rem 0;
+    background: none;
+    border-bottom: 1px solid #000;
+}
+.example .right-side-2 #codigoEjemplo{
+    display: block;
+    margin: 1rem 0;
+    padding: 10px 15px;
+    background: #fff;
+    color: #333;
+}
+.example .right-side-2 .icon{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem 0;
+}
+.example .right-side-2 .icon button{
+    border: none;
+    background: none;
+    cursor: pointer;
+    outline: none;
+}
+.example .right-side-2 .icon button:active i.fa-chevron-circle-right{
+    font-size: 2.1rem;
+}
+.example .right-side-2 .icon button i.fa-chevron-circle-right{
+    font-size: 2rem;
+    color: #ffd803;
+}
+footer{
+    background-color: #fffffe;
+    padding: 1rem 0;
+}
+footer .contenedor{
+    margin: 0 auto;
+    padding: 2rem 0;
+    width: 80%;
+    text-align: right;
+}

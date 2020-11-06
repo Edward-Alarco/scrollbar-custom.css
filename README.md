@@ -2,11 +2,19 @@
 Mini library to customize the default scroll bar on the web.
 by [Edward A.](https://github.com/Edward-Alarco)
 
+
+## INSTALLATION
+To the <head></head>
 ```sh
-<script src="https://gist.github.com/Edward-Alarco/a6a258a9355be282227c4594da608f9f.js"></script>
+<link rel="stylesheet" href="https://rawcdn.githack.com/Edward-Alarco/scrollbar-custom.css/master/styles/main.css?token=ANLIZ2U4IU2MNEI4DSSOYJC7USMJY">
 ```
 
-> https://gist.github.com/Edward-Alarco/a6a258a9355be282227c4594da608f9f
+At the bottom of the <body></body>
+
+```sh
+<script src="https://rawcdn.githack.com/Edward-Alarco/scrollbar-custom.css/master/js/scrollbar.js?token=ANLIZ2SI36GSAG7AGWSJOI27USNGA"></script>
+```
+
 
 ## - Technologies Used
 

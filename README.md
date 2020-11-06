@@ -70,4 +70,6 @@ Also, you can contact me by my personal email, in case you have constructive ide
 
 This tool is for everyone, for everyone!
 
+![Image](https://raw.githubusercontent.com/Edward-Alarco/scrollbar-custom.css/master/img/CSSMan.png?token=ANLIZ2XIV7WROFIUOH3KQH27USKLA)
+
 **Software Open Source 😛!**

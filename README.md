@@ -4,12 +4,12 @@ by [Edward A.](https://github.com/Edward-Alarco)
 
 
 ## INSTALLATION
-To the <head></head>
+To the `<head></head>`
 ```sh
 <link rel="stylesheet" href="https://rawcdn.githack.com/Edward-Alarco/scrollbar-custom.css/master/styles/main.css?token=ANLIZ2U4IU2MNEI4DSSOYJC7USMJY">
 ```
 
-At the bottom of the <body></body>
+At the bottom of the `<body></body>`
 
 ```sh
 <script src="https://rawcdn.githack.com/Edward-Alarco/scrollbar-custom.css/master/js/scrollbar.js?token=ANLIZ2SI36GSAG7AGWSJOI27USNGA"></script>

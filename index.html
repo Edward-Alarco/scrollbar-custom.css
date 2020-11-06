@@ -4,14 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/b72be65822.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="img/Favicon.png" type="image/x-icon">
+<link rel="icon" href="img/Favicon.png" type="image/x-icon">
+    <!-- ESTILOS PARA EL SCROLL -->
     <link rel="stylesheet" href="styles/main.css">
+    <!-- ESTILOS DE LA PAGINA -->
     <link rel="stylesheet" href="styles/styles-index.css">
-    <title>Scroll Custom</title>
+    <title>Scroll Custom | CSS</title>
 </head>
-<body class="w-15 radius">
+<body class="w-15 radius degraded" thumb="#FFD803" track="#BAE8E8">
     
     <div class="navbar">
-        <h2>scrollbar.css</h2>
+        <h2>👆👇 scrollbar.css</h2>
         <div class="enlaces">
             <a href="#documentacion" class="scroll-suave" target="_blank">Documentación</a>
             <a href="https://github.com/Edward-Alarco/scrollbar-custom.css" target="_blank">Github</a>
@@ -21,14 +25,14 @@
         <div class="left-side">
             <h2>Scrollbars Personalizadas.</h2>
             <p>Un simple script y unos cuantos estilos es lo que nos encontramos al introducir estos archivos a su proyecto. Con simples lineas de codigo, tenemos nuestro propias scrollbar customizada.</p>
-            <a href="#">Ver más &nbsp;<i class="fas fa-long-arrow-alt-right"></i></a>
+            <a href="#documentacion" class="scroll-suave">Doc &nbsp;<i class="fas fa-long-arrow-alt-right"></i></a>
         </div>
         <div class="right-side">
             <img src="img/ScrollBar.png" alt="" draggable="false">
         </div>
     </div>
 
-    <div style="background-color: #e3f6f5; width: 100%; padding: 3rem;">
+    <div style="background-color: #e3f6f5; width: 100%; padding: 3rem;" id="pcustom">
         <div class="example">
             <div class="left-side-2">
                 <h2 id="documentacion">Documentación</h2>
@@ -53,18 +57,24 @@
                 <h2>Colores del Scroll</h2>
                 <p>Al igual que las demás propiedades, estan se introduciran en la etiqueta <code>&#60;body&#62;</code></p>
                 
-                <p>Atributo thumb</p>
+                <p>-> Atributo thumb</p>
 <code id="codigoEjemplo">
 &#60;body thumb=""&#62;&#60;&#47;body&#62;
 </code>
-<small>Dentro del atributo se introduce un color o codigo hexadecimal</small>
+<small id="small">Dentro del atributo se introduce un color o codigo hexadecimal</small>
 <br><br>
-<p>Atributo track</p>
+<p>-> Atributo track</p>
 <code id="codigoEjemplo">
 &#60;body track=""&#62;&#60;&#47;body&#62;
 </code>
-<small>Dentro del atributo se introduce un color o codigo hexadecimal</small>
+<small id="small">Dentro del atributo se introduce un color o codigo hexadecimal</small>
             </div>
+        </div>
+        <div style="width: 80%; margin: 2rem auto; padding: 0 2.5rem;" class="ultimo-parrafo">
+            <p>Además de esto, contamos con un degradado para el scroll, acompañando en las clases.</p>
+<code id="codigoEjemplo">
+&#60;body class="degraded"&#62;&#60;&#47;body&#62;
+</code>
         </div>
     </div>
 

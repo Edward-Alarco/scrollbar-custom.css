@@ -24,7 +24,9 @@
 .radius::-webkit-scrollbar-thumb{
   border-radius: 50px;
 }
-
+.degraded::-webkit-scrollbar-thumb{
+  background: linear-gradient(var(--thumbColor),var(--trackColor));
+}
 body::-webkit-scrollbar-thumb {
   background-repeat: no-repeat;
   background-color: var(--thumbColor);

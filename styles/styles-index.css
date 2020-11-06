@@ -181,6 +181,19 @@ body::-webkit-scrollbar-track {
     font-size: 2rem;
     color: #ffd803;
 }
+.ultimo-parrafo p{
+    color: #2d334a;
+    margin: 0.5rem 0 2rem 0;
+    font-size: 1rem;
+    letter-spacing: 0.05em;
+}
+.ultimo-parrafo code{
+    display: block;
+    margin: 1rem 0;
+    padding: 10px 15px;
+    background: #fff;
+    color: #333;
+}
 footer{
     background-color: #fffffe;
     padding: 1rem 0;
@@ -190,4 +203,179 @@ footer .contenedor{
     padding: 2rem 0;
     width: 80%;
     text-align: right;
+}
+
+@media all and (max-width: 1110px){
+    .main .left-side h2{
+        font-size: 2.5rem;
+        line-height: 1.1;
+    }
+    .main .left-side p{
+        margin: 1.25rem 0;
+    }
+    .main .left-side a{
+        padding: 9px 22.5px;
+    }
+    .main .right-side img{
+        width: 37%;
+    }
+    .navbar .enlaces a{
+        font-size: 0.9rem;
+        margin: 0 0.75rem;
+    }
+    .navbar h2{
+        font-size: 1rem;
+    }
+    .example .left-side-2 h2{
+        font-size: 1.75rem;
+    }
+    .example .left-side-2 p, .example .right-side-2 p, .ultimo-parrafo p{
+        font-size: 0.9rem;
+        margin: 0.5rem 0 1.5rem 0;
+        letter-spacing: 0.04em;
+    }
+    .example .left-side-2 #codigoEjemplo, .ultimo-parrafo code{
+        font-size: 0.95rem;
+        padding: 9px 12px;
+        margin: 0.9rem 0;
+    }
+    footer .contenedor{
+        font-size: 0.9rem;
+    }
+    #small{
+        font-size: 0.8rem;
+        color: #696969;
+    }
+}
+
+@media all and (max-width: 1000px){
+    .example .left-side-2,.example .right-side-2{
+        width: 100%;
+    }
+    .example{
+        display: block;
+    }
+    .example .right-side-2{
+        padding: 0 2.5rem;
+        margin: 2.5rem 0;
+    }
+}
+
+@media all and (max-width: 950px){
+    .main .left-side h2{
+        font-size: 2rem;
+    }
+    .main .left-side p{
+        margin: 1rem 0;
+        font-size: 0.9rem;
+    }
+}
+
+@media all and (max-width: 900px){
+    .example .left-side-2, .example .right-side-2{
+        padding: 0 0.5rem;
+    }
+    .ultimo-parrafo{
+        padding: 0 0.5rem !important;
+    }
+    footer .contenedor{
+        text-align: center;
+        font-size: 0.8rem;
+    }
+}
+
+@media all and (max-width: 850px){
+    .main .left-side h2{
+        font-size: 1.5rem;
+    }
+    .main .left-side p{
+        font-size: 0.8rem;
+        margin: 0.75rem 0;
+    }
+    .main .left-side a{
+        padding: 5px 15px;
+    }
+    .main .right-side img{
+        width: 43%;
+    }
+    .example .left-side-2 h2{
+        font-size: 1.25rem;
+    }
+    .example .left-side-2 p, .example .right-side-2 p, .ultimo-parrafo p{
+        font-size: 0.8rem;
+        margin: 0.5rem 0 1.1rem 0;
+    }
+    .example .left-side-2 #codigoEjemplo, .ultimo-parrafo code, .example .right-side-2 #codigoEjemplo{
+        font-size: 0.85rem;
+        padding: 7px 9px;
+        margin: 0.85rem 0;
+    }
+}
+
+@media all and (max-width: 800px){
+    .main .left-side{
+        width: 100%;
+        margin: 1rem 0;
+    } 
+    .main .right-side{
+        width: 100%;
+    }
+    .main{
+        height: auto;
+    }
+    .main .right-side img{
+        width: 25%;
+        margin: 0 0 2rem 0;
+    }
+}
+
+@media all and (max-width:570px){
+    .main .right-side img{
+        width: 30%;
+    }
+    .example{
+        width: 100%;
+    }
+    .ultimo-parrafo{
+        width: 100% !important;
+    }
+    #pcustom{
+        padding: 2rem !important;
+    }
+}
+
+@media all and (max-width:530px){
+    .navbar .enlaces a:first-child{
+        display: none;
+    }
+    #pcustom
+    {
+        padding: 1.2rem !important;
+    }
+    .main{
+        width: 96%;
+    }
+    .main .right-side img{
+        width: 35%;
+    }
+    .navbar{
+        padding: 0.35rem 1.5rem;
+    }
+}
+
+@media all and (max-width:450px){
+    #pcustom{
+        padding: 0.5rem !important;
+    }
+    .main .right-side img{
+        width: 37.5%;
+    }
+}
+@media all and (max-width:400px){
+    .navbar{
+        padding: 0.25rem 1rem;
+    }
+    .main .right-side img{
+        width: 40%;
+    }
 }

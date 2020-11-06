@@ -3,10 +3,10 @@ Mini library to customize the default scroll bar on the web.
 by [Edward A.](https://github.com/Edward-Alarco)
 
 ```sh
-<script src="https://gist.github.com/Edward-Alarco/2855520fd05443f2ceb3152764a95cfe.js"></script>
+<script src="https://gist.github.com/Edward-Alarco/a6a258a9355be282227c4594da608f9f.js"></script>
 ```
 
-https://gist.github.com/Edward-Alarco/2855520fd05443f2ceb3152764a95cfe
+> https://gist.github.com/Edward-Alarco/a6a258a9355be282227c4594da608f9f
 
 ## - Technologies Used
 
@@ -40,14 +40,23 @@ The scrollbar does not have rounded edges by default, so the 'radius' class coul
 ### Scroll Colors
 Like the other properties, they will be entered in the <body> tag
 
+### Degraded
+In addition to this, we have a gradient for the scroll, accompanying the classes.
+```sh
+<body class="degraded"></body>
+```
+
 #### Attribute 'thumb'
 ```sh
 <body thumb=""></body>
 ```
+> Inside the attribute a color or hexadecimal code is entered
+
 #### Attribute 'track'
 ```sh
 <body track=""></body>
 ```
+> Inside the attribute a color or hexadecimal code is entered
 
 
 ## - Do you want to contribute to the improvement?

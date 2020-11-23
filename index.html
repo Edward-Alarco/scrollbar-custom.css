@@ -10,22 +10,42 @@
     <link rel="stylesheet" href="styles/main.css">
     <!-- ESTILOS DE LA PAGINA -->
     <link rel="stylesheet" href="styles/styles-index.css">
+    <link rel="stylesheet" href="styles/modal.css">
     <title>Scroll Custom | CSS</title>
 </head>
 <body class="w-15 radius degraded" thumb="#FFD803" track="#BAE8E8">
+
+    <div class="modal-installation">
+        <div class="btn-cerrar">
+            <i class="fas fa-times"></i>
+        </div>
+        <div class="container">
+            <h2>Installation</h2>
+            <p>To the <span>&#60;head&#62;</span></p>
+            <div class="css">
+                <input id="css" readonly type="text" value='&#60;link rel="stylesheet" href="https://rawcdn.githack.com/Edward-Alarco/scrollbar-custom.css/master/styles/main.css?token=ANLIZ2U4IU2MNEI4DSSOYJC7USMJY"&#62;'>
+                <button onclick="copyCss();"><i class="far fa-copy"></i></button>
+            </div>
+            <p>At the bottom of the <span>&#60;body&#62;</span></p>
+            <div class="script">
+                <input id="script" readonly type="text" value='&#60;script src="https://rawcdn.githack.com/Edward-Alarco/scrollbar-custom.css/master/js/scrollbar.js?token=ANLIZ2SI36GSAG7AGWSJOI27USNGA"&#62;&#60;/script&#62;'>
+                <button onclick="copyScript();"><i class="far fa-copy"></i></button>
+            </div>
+        </div>
+    </div>
     
     <div class="navbar">
         <h2>👆👇 scrollbar.css</h2>
         <div class="enlaces">
-            <a href="#documentacion" class="scroll-suave" target="_blank">Documentación</a>
+            <a href="#documentacion" class="scroll-suave" target="_blank">Documentation</a>
             <a href="https://github.com/Edward-Alarco/scrollbar-custom.css" target="_blank">Github</a>
         </div>
     </div>
     <div class="main">
         <div class="left-side">
-            <h2>Scrollbars Personalizadas.</h2>
-            <p>Un simple script y unos cuantos estilos es lo que nos encontramos al introducir estos archivos a su proyecto. Con simples lineas de codigo, tenemos nuestro propias scrollbar customizada.</p>
-            <a href="#documentacion" class="scroll-suave">Doc &nbsp;<i class="fas fa-long-arrow-alt-right"></i></a>
+            <h2>Custom Scrollbars.</h2>
+            <p>A simple script and a few styles is what we come across when introducing these files to your project. With simple lines of code, we have our own custom scrollbar!</p>
+            <a href="#" id="btn-install">Installation &nbsp;<i class="fas fa-long-arrow-alt-right"></i></a>
         </div>
         <div class="right-side">
             <img src="img/ScrollBar.png" alt="" draggable="false">
@@ -35,9 +55,9 @@
     <div style="background-color: #e3f6f5; width: 100%; padding: 3rem;" id="pcustom">
         <div class="example">
             <div class="left-side-2">
-                <h2 id="documentacion">Documentación</h2>
-                <p>Todos los atributos serán puesto en una simple linea de codigo, especificamente en la etiqueta <code>&#60;body&#62;</code></p>
-                <p>Estos 3 serán las clases de medidas del ancho para la scrollbar, cada uno varia el 'width' en pixeles con el numero de la clase respectiva.</p>
+                <h2 id="documentacion">Documentation</h2>
+                <p>All the attributes will be put in a single line of code, specifically in the <code>&#60;body&#62;</code> tag</p>
+                <p>These 3 will be the classes of width measurements for the scrollbar, each one varies the 'width' in pixels with the number of the respective class.</p>
 <code id="codigoEjemplo">
 &#60;body class="w-15"&#62;&#60;&#47;body&#62;                  </code>
 
@@ -47,31 +67,31 @@
 <code id="codigoEjemplo">
 &#60;body class="w-7"&#62;&#60;&#47;body&#62;             
 </code>
-                <p style="margin-top: 3rem;">El Scrollbar no tiene bordes redondeados por defecto, entonces tambien se le podra agregar la clase 'radius' para resolver este problema.</p>
+                <p style="margin-top: 3rem;">The Scrollbar does not have rounded edges by default, so the 'radius' class could also be added to it to solve this problem.</p>
 <code id="codigoEjemplo">
 &#60;body class="radius"&#62;&#60;&#47;body&#62;             
 </code>
                                     
             </div>
             <div class="right-side-2">
-                <h2>Colores del Scroll</h2>
-                <p>Al igual que las demás propiedades, estan se introduciran en la etiqueta <code>&#60;body&#62;</code></p>
+                <h2>ScrollBar Colors</h2>
+                <p>Like the other properties, they will be entered in the <code>&#60;body&#62;</code> label</p>
                 
-                <p>-> Atributo thumb</p>
+                <p>-> Attribute thumb</p>
 <code id="codigoEjemplo">
 &#60;body thumb=""&#62;&#60;&#47;body&#62;
 </code>
-<small id="small">Dentro del atributo se introduce un color o codigo hexadecimal</small>
+<small id="small">Inside the attribute a color or hexadecimal code is entered</small>
 <br><br>
-<p>-> Atributo track</p>
+<p>-> Attribute track</p>
 <code id="codigoEjemplo">
 &#60;body track=""&#62;&#60;&#47;body&#62;
 </code>
-<small id="small">Dentro del atributo se introduce un color o codigo hexadecimal</small>
+<small id="small">Inside the attribute a color or hexadecimal code is entered</small>
             </div>
         </div>
         <div style="width: 80%; margin: 2rem auto; padding: 0 2.5rem;" class="ultimo-parrafo">
-            <p>Además de esto, contamos con un degradado para el scroll, acompañando en las clases.</p>
+            <p>In addition to this, we have a gradient for the scroll, accompanying the classes.</p>
 <code id="codigoEjemplo">
 &#60;body class="degraded"&#62;&#60;&#47;body&#62;
 </code>
@@ -80,12 +100,37 @@
 
     <footer>
         <div class="contenedor">
-            &copy; Todos los Derechos Reservados - <a href="https://github.com/Edward-Alarco" style="color: #000;">Edward A.</a>
+            &copy; All rights reserved - <a href="https://github.com/Edward-Alarco" style="color: #000;">Edward A.</a>
         </div>
     </footer>
 
 
-    
+    <script>
+        const button = document.getElementById('btn-install');
+        const modal = document.getElementsByClassName('modal-installation')[0]
+        const cerrar = document.getElementsByClassName('btn-cerrar')[0];
+        button.addEventListener('click',function(e){
+            e.preventDefault();
+            modal.classList.add('active');
+        })
+        cerrar.addEventListener('click',function(){
+            modal.classList.remove('active');
+        })
+
+        function copyCss(){
+            var csslink = document.getElementById('css');
+            csslink.select();
+            csslink.setSelectionRange(0,9999);
+            document.execCommand('copy');
+        }
+        function copyScript(){
+            var scriptlink = document.getElementById('script');
+            scriptlink.select();
+            scriptlink.setSelectionRange(0,9999);
+            document.execCommand('copy');
+        }
+
+    </script>    
     <script src="js/script.js"></script>
     <script src="js/scrollbar.js"></script>
 </body>

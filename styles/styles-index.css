@@ -44,6 +44,16 @@ body::-webkit-scrollbar-track {
     font-weight: 600;
     margin: 0 1rem;
 }
+.navbar .enlaces a:nth-child(2){
+    background-color: rgba(255, 216, 3, 0.7);
+    color: #fff;
+    padding: 5px 12px;
+    border-radius: 3px;
+    transition: all .2s ease-in-out;
+}
+.navbar .enlaces a:nth-child(2):hover{
+    background-color: rgba(255, 216, 3, 1);
+}
 .main{
     width: 85%;
     display: flex;

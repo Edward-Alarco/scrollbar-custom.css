@@ -1,0 +1,138 @@
+.modal-installation {
+  left: -100%;
+  width: 100%;
+  height: 100vh;
+  background-color: #fff;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.modal-installation.active {
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  left: 0;
+}
+
+.modal-installation .btn-cerrar {
+  position: absolute;
+  left: 0;
+  cursor: pointer;
+  top: 0;
+  margin: 2rem;
+}
+
+.modal-installation .btn-cerrar i {
+  font-size: 1.5rem;
+}
+
+.modal-installation div.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 1.25rem;
+}
+
+.modal-installation div.container h2 {
+  text-align: center;
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin-bottom: 1.25rem;
+}
+
+.modal-installation div.container p {
+  font-size: 1rem;
+  color: #696969;
+}
+
+.modal-installation div.container div.css, .modal-installation div.container div.script {
+  position: relative;
+  margin: 0.75rem 0;
+}
+
+.modal-installation div.container div.css input, .modal-installation div.container div.script input {
+  width: 100%;
+  background: #444;
+  outline: none;
+  color: #fff;
+  border-radius: 3px;
+  padding: 8px 10px;
+  border: none;
+}
+
+.modal-installation div.container div.css button, .modal-installation div.container div.script button {
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  position: absolute;
+  padding: 0 1rem;
+  outline: none;
+  border: none;
+  background-color: #444;
+  color: #fff;
+  top: 50%;
+  height: 100%;
+  right: 0;
+  cursor: pointer;
+  outline: none !important;
+  -webkit-animation: all 3s ease-in-out;
+          animation: all 3s ease-in-out;
+  -webkit-transform: translateY(-50%) scale(1);
+          transform: translateY(-50%) scale(1);
+}
+
+.modal-installation div.container div.css button i, .modal-installation div.container div.script button i {
+  font-size: 1.2rem;
+}
+
+.modal-installation div.container div.css button:active, .modal-installation div.container div.script button:active {
+  -webkit-transform: translateY(-50%) scale(0.95);
+          transform: translateY(-50%) scale(0.95);
+}
+
+@media all and (max-width: 850px) {
+  .modal-installation div.container {
+    width: 90%;
+  }
+  .modal-installation div.container h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media all and (max-width: 800px) {
+  .modal-installation div.container {
+    width: 92.5%;
+  }
+  .modal-installation div.container h2 {
+    font-size: 1.25rem;
+  }
+  .modal-installation div.container p {
+    font-size: 0.9rem;
+  }
+}
+
+@media all and (max-width: 570px) {
+  .modal-installation div.container {
+    width: 95%;
+  }
+  .modal-installation div.container p {
+    font-size: 0.85rem;
+  }
+  .modal-installation div.container h2 {
+    font-size: 1.005rem;
+  }
+}
+/*# sourceMappingURL=modal.css.map */
